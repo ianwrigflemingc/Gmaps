@@ -2,11 +2,20 @@
 <html lang="en">
 <head>
 <title>Tutorial_2</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5a1FoKmbmQ1djPh6pRx7oiknBf3ACNOE&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+  <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
 
-<body>
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 3,
@@ -137,7 +146,7 @@ const locations = [
   { lat: 45.62355, lng: -80.41577	},
   { lat: 46.720316, lng: -80.363981 },
   { lat: 45.16050292, lng: -79.9717354 },
-  { lat: 43.24841, lng: -81.82342	},
+  { lat: 43.24841, lng: -81.82342 },
   { lat: 51.22, lng: -80.65 },
   { lat: 42.700398, lng: -80.329666 },
   { lat: 45.55561, lng: -74.4449 },
@@ -148,5 +157,15 @@ const locations = [
   { lat: 48.713534, lng: -85.649972 },
   { lat: 46.622078, lng: -81.455217 },
   { lat: 51.104, lng:	-94.288	},
-];
+  ];
+</head>
+<body>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
   </body>
+</html>
+
+
+ 
+   
